@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight ERA</title>
+    <link rel="stylesheet" href="moonlight.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">LOGO</a>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+  <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Rajjjjoooo</h2>
+    <a href="#sec" class="btn">Explore</a>
+    <img src="mountains_front.png" id="mountains_front">
+   
+  </section>
+<div class="sec" id="sec">
+    <h2>Parallax Scrolling Effects</h2> <br> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius incidunt veniam vero? Labore aut facilis optio iure, exercitationem voluptates praesentium omnis explicabo doloremque blanditiis quaerat ducimus dicta dignissimos nam, recusandae repellendus amet nostrum hic magni temporibus. Molestias, natus eligendi. Debitis possimus eos quibusdam repellat eaque eum accusantium dolorem corporis facere soluta? Numquam odio animi voluptate error cum, veniam, eveniet delectus itaque consequuntur debitis dignissimos quam laborum vero impedit totam accusantium ea quos maxime perspiciatis in quae enim nihil vitae rem! Excepturi ut reiciendis qui sint ducimus illo error fuga possimus iusto commodi delectus veniam  <br> <br>  reprehenderit officia blanditiis molestiae adipisci tempora repellat omnis et. Ipsum iure dolor itaque facilis consequatur maiores ab deleniti quae, commodi, molestiae beatae consequuntur nisi. Natus cupiditate commodi assumenda similique praesentium, incidunt atque magni dolorum eaque mollitia doloremque soluta eveniet, recusandae, ut totam nesciunt expedita quibusdam consequatur non. Sed ipsa, aliquam odit, dolores magni alias laboriosam asperiores enim soluta modi distinctio. Rerum provident ad, ab consequatur reiciendis similique quae quo ex voluptatem? Perferendis assumenda unde quaerat adipisci quibusdam! Laboriosam aliquid, earum nihil repellendus nemo ducimus tempore quis a hic facere non consequatur dicta, nostrum ea. Numquam labore eaque minima alias cumque!br
+        <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius incidunt veniam vero? Labore aut facilis optio iure, exercitationem voluptates praesentium omnis explicabo doloremque blanditiis quaerat ducimus dicta dignissimos nam, recusandae repellendus amet nostrum hic magni temporibus. Molestias, natus eligendi. Debitis possimus eos quibusdam repellat eaque eum accusantium dolorem corporis facere soluta? Numquam odio animi voluptate error cum, veniam, eveniet delectus itaque consequuntur debitis dignissimos quam laborum vero impedit totam accusantium ea quos maxime perspiciatis in quae enim nihil vitae rem! Excepturi ut reiciendis qui sint ducimus illo error fuga possimus iusto commodi delectus veniam  <br> <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius incidunt veniam vero? Labore aut facilis optio iure, exercitationem voluptates praesentium omnis explicabo doloremque blanditiis quaerat ducimus dicta dignissimos nam, recusandae repellendus amet nostrum hic magni temporibus. Molestias, natus eligendi. Debitis possimus eos quibusdam repellat eaque eum accusantium dolorem corporis facere soluta? Numquam odio animi voluptate error cum, veniam, eveniet delectus itaque consequuntur debitis dignissimos quam laborum vero impedit totam accusantium ea quos maxime perspiciatis in quae enim nihil vitae rem! Excepturi ut reiciendis qui sint ducimus illo error fuga possimus iusto commodi delectus veniam  <br> <br>  reprehenderit officia blanditiis molestiae adipisci tempora repellat omnis et. Ipsum iure dolor itaque facilis consequatur maiores ab deleniti quae, commodi, molestiae beatae consequuntur nisi. Natus cupiditate commodi assumenda similique praesentium, incidunt atque magni dolorum eaque mollitia doloremque soluta eveniet, recusandae, ut totam nesciunt expedita quibusdam consequatur non. Sed ipsa, aliquam odit, dolores magni alias laboriosam asperiores enim soluta modi distinctio. Rerum provident ad, ab consequatur reiciendis similique quae quo ex voluptatem? Perferendis assumenda unde quaerat adipisci quibusdam! Laboriosam aliquid, earum nihil repellendus nemo ducimus tempore quis a hic facere non consequatur dicta, nostrum ea. Numquam labore eaque minima alias cumque!br
+        <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius incidunt veniam vero? Labore aut facilis optio iure, exercitationem voluptates praesentium omnis explicabo doloremque blanditiis quaerat ducimus dicta dignissimos nam, recusandae repellendus amet nostrum hic magni temporibus. Molestias, natus eligendi. Debitis possimus eos quibusdam repellat eaque eum accusantium dolorem corporis facere soluta? Numquam odio animi voluptate error cum, veniam, eveniet delectus itaque consequuntur debitis dignissimos quam laborum vero impedit totam accusantium ea quos maxime perspiciatis in quae enim nihil vitae rem! Excepturi ut reiciendis qui sint ducimus illo error fuga possimus iusto commodi delectus veniam  <br> <br>
+    </p>
+</div>
+
+<script>
+    let moon = document.getElementById('moon');
+    let stars = document.getElementById('stars');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let mountains_front = document.getElementById('mountains_front');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let header=document.querySelector('header');
+window.addEventListener('scroll',function(){
+ let value=window.scrollY;
+ stars.style.left=value*0.25 + 'px';
+ moon.style.top=value*1.05 + 'px';
+mountains_behind.style.top=value*0.5 + 'px';
+mountains_front.style.top=value*0 + 'px';
+text.style.marginRight=value*4 + 'px';
+text.style.marginTop=value*1.5 + 'px';
+btn.style.marginTop=value*1.5 + 'px';
+header.style.top=value*0.5 +'px;'
+
+})
+
+</script>
+
+</body>
+</html>
